@@ -1,0 +1,166 @@
+:root{
+    --cor-amarela:#D6AF5B;
+    --cor-azul-profundo:#153349;
+    --cor-azul-noturno:#05273A;
+    --cor-cinza:#EAEAEA;
+    --cor-preto:#000;
+}
+
+
+@font-face {
+    font-family:F_M_Regular ;
+    src: url(../Fonts/FreightTextProMedium-Regular.ttf);
+}
+
+@font-face {
+    font-family: F_proBlack_Regular;
+    src: url(../Fonts/FreightTextProBlack-Regular.ttf);
+}
+
+@font-face {
+    font-family: F_proBold_Regular;
+    src: url(../Fonts/FreightTextProBold-Regular.ttf);
+}
+
+*{
+   font-family: 'F_M_Regular','F_proBlack_Regular','F_proBold_Regular';
+
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    
+    position: relative;
+}
+
+@media (max-width:450px) {
+/* header */
+    
+    /* Botão de whatsApp */
+    .btn_whats{
+        position: absolute;
+            right: 24px;
+            bottom: 24px;
+        width: 46px;
+        height: 46px;
+        cursor: pointer;
+    }
+
+    .btn_whats img{
+        width: 100%;
+        height: 100%;
+        border-radius: 25px;
+        animation: whatsApp_chaque ease-in-out 1s infinite;
+    }
+        /* Animação do botão */
+        @keyframes whatsApp_chaque {
+            from{
+                transform: translateX(2px);
+            }
+
+            25%{
+                transform: translateX(4px);
+            }
+
+            50%{
+                transform: translateX(-2px);
+            }
+
+            75%{
+                transform: translateX(-4px);
+            }
+
+            to{
+               transform: translateX(2px);
+            }
+        }
+
+    .btn_subir{
+        position: absolute;
+            left: 24px;
+            bottom: 24px;
+        width: 46px;
+        height: 46px;
+        cursor: pointer;
+        border: solid var(--cor-azul-profundo) 2px;
+        border-radius: 24px;
+        box-shadow: #000 2px 2px 5px ;
+    }
+
+    .btn_subir img{
+        width: 100%;
+        height: 100%;
+        border-radius: 25px;
+    }
+    /* espaço da camera */
+    .camera{
+        width: 100vw;
+        height: 58px;
+    }
+
+    /* Espaço do logo tipo */
+    h1{
+        display: flex;
+        flex-flow: row nowrap;
+
+        justify-items: center;
+        align-items: center;
+
+        width: 100vw;
+        height: 168px;
+        padding: 9.58% 28%;
+    }
+
+    h1 img{
+        width: 100%;
+    }
+
+    /* Espaço do Menu */
+    .container_de_navegacao{
+
+        position: sticky;
+        top: 0;
+
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-content: center;
+        
+        width: 100vw;
+        height: 168px;
+
+        padding: 9.58% 28%;
+
+        background-color:var(--cor-amarela);
+    }
+
+    .container_de_navegacao img{
+        margin: auto;
+        width: calc(100% - 60%);
+    }
+
+/* Main */
+    /* Apresentações */
+
+    .Apresentacao{
+        width: 100vw;
+        height: 573px;
+    }
+
+    .slides{
+        display: flex;
+        flex-flow: row nowrap;
+        width: 300vw;
+        height: 100%;
+    }
+
+    .slide{
+        width: 100%;
+        height: 100%;
+        background: #05273A;
+    }
+}
