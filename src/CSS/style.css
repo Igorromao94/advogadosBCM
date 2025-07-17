@@ -6,7 +6,6 @@
     --cor-preto:#000;
 }
 
-
 @font-face {
     font-family:F_M_Regular ;
     src: url(../Fonts/FreightTextProMedium-Regular.ttf);
@@ -32,28 +31,35 @@
 
 body{
     width: 100vw;
-    height: 100vh;
     
     position: relative;
 }
 
+.windous{
+    width: 100vw;
+    height: 100vh;
+    background: #D6AF5B;
+}
+
 @media (max-width:450px) {
-/* header */
+    /* header */
     
     /* Botão de whatsApp */
     .btn_whats{
+        
         position: absolute;
             right: 24px;
             bottom: 24px;
-        width: 46px;
-        height: 46px;
-        cursor: pointer;
-    }
+            width: 46px;
+            height: 46px;
+            cursor: pointer;
+        }
 
     .btn_whats img{
         width: 100%;
         height: 100%;
         border-radius: 25px;
+        box-shadow: #000 2px 2px 5px ;
         animation: whatsApp_chaque ease-in-out 1s infinite;
     }
         /* Animação do botão */
@@ -78,7 +84,7 @@ body{
                transform: translateX(2px);
             }
         }
-
+        
     .btn_subir{
         position: absolute;
             left: 24px;
@@ -90,12 +96,13 @@ body{
         border-radius: 24px;
         box-shadow: #000 2px 2px 5px ;
     }
-
+    
     .btn_subir img{
         width: 100%;
         height: 100%;
         border-radius: 25px;
     }
+
     /* espaço da camera */
     .camera{
         width: 100vw;
@@ -109,7 +116,7 @@ body{
 
         justify-items: center;
         align-items: center;
-
+        
         width: 100vw;
         height: 168px;
         padding: 9.58% 28%;
@@ -118,12 +125,13 @@ body{
     h1 img{
         width: 100%;
     }
-
-    /* Espaço do Menu */
+    
+    /* Espaço do Menu de celular */
+   
     .container_de_navegacao{
 
         position: sticky;
-        top: 0;
+        top: -1px;
 
         display: flex;
         flex-flow: column nowrap;
@@ -132,25 +140,200 @@ body{
         
         width: 100vw;
         height: 168px;
-
+        
         padding: 9.58% 28%;
 
-        background-color:var(--cor-amarela);
+        background-color: var(--cor-amarela);
+
     }
 
-    .container_de_navegacao img{
-        margin: auto;
-        width: calc(100% - 60%);
+    .menu_colunas{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        row-gap: 10px;
+        
     }
 
+    .colunas{
+        height: 10px;
+        width: 80px;
+        border-radius: 3px;
+        background: var(--cor-azul-noturno);    
+    }
+
+    #coluna_1{
+        transition: ease-in-out 0.5s;
+    }
+
+    .coluna_1_open{
+        animation: coluna_1_abre 0.5s ease-in-out forwards;
+    }
+
+    .coluna_1_closed{
+        animation: coluna_1_fexha 0.5s ease-in-out forwards;
+    }
+
+    .coluna_2_open{
+        opacity: 0;
+        transition: 0.5s ease-in-out;
+    }
+
+    .coluna_2_closed{
+        opacity: 1;
+        transition: 0.5s ease-in-out;
+    }
+
+    .coluna_3_open{
+        animation: coluna_3_abre 0.5s ease-in-out forwards;
+    }
+
+    .coluna_3_closed{
+        animation: coluna_3_fexha 0.5s ease-in-out forwards;
+    }
+    
+    @keyframes coluna_1_abre {
+            0%{
+                transform: rotatez(0deg);
+            }
+
+            100%{
+                transform:translateY(20px) rotatez(45deg);
+            }
+    }
+
+        @keyframes coluna_1_fexha {
+            0%{
+                transform:translateY(20px) rotatez(45deg);
+            }
+            
+            100%{
+                transform: rotatez(0deg);
+            }
+    }
+
+    @keyframes coluna_3_abre {
+            0%{
+                transform: rotatez(0deg);
+            }
+
+            100%{
+                transform:translateY(-20px) rotatez(-45deg);
+            }
+    }
+
+    @keyframes coluna_3_fexha {
+            0%{
+                transform:translateY(-20px) rotatez(-45deg);
+            }
+            
+            100%{
+                transform: rotatez(0deg);
+            }
+    }
+    
+    .nav_mobile{
+        position: sticky;
+        width: 100vw;
+        top: 166px;
+
+        display: flex;
+        flex-flow: column  nowrap;
+        align-items: center;
+        justify-content: center;
+        
+        
+        row-gap: 10px;
+
+        background: var(--cor-cinza);
+    }
+
+    .caixa_M_open{
+        animation: abertura_do_menu_inferior 0.5s ease-in-out forwards;
+    }
+
+    .caixa_M_closed{
+        animation: menu_inferior_closed 0.5s ease-in-out forwards;
+    }
+
+    @keyframes menu_inferior_open {
+        from{
+            display: none;
+            height: 0;
+        }
+
+        to{
+            display: flex;
+            height: 382px;
+        }
+    }
+
+    @keyframes menu_inferior_closed {
+        from{
+            height: 382px;
+        }
+        
+        to{
+            height: 0;
+            display: none;
+        }
+    }
+
+    .link_alteravel{
+        width: 100vw;
+        text-align: center;
+        font-size: 36px;
+        text-decoration: none;
+        color: var(--cor-amarela);
+        
+        border-top: 1px solid ;
+    }
+
+    .link_alteravel_open{
+        animation: almentando 0.5s ease-in-out forwards ;
+    }
+
+    .link_alteravel_closed{
+        animation: diminuindo 0.5s ease-in-out forwards ;
+    }
+
+    @keyframes almentando {
+        from{
+            font-size: 0px;
+        }
+
+        to{
+            font-size: 36px;
+        }
+    }
+
+    @keyframes diminuindo {
+        from{
+            font-size: 36px;
+        }
+        
+        to{
+            font-size: 0px;
+        }
+    }
+    
 /* Main */
     /* Apresentações */
+
+    main{
+        width: 100vw;
+        height: auto;
+        overflow: hidden;
+    }
 
     .Apresentacao{
         width: 100vw;
         height: 573px;
     }
-
+    
     .slides{
         display: flex;
         flex-flow: row nowrap;
@@ -163,4 +346,10 @@ body{
         height: 100%;
         background: #05273A;
     }
+}
+
+/* funções */
+        
+.desativo{
+    display: none;
 }

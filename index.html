@@ -11,24 +11,15 @@
 </head>
 <body>
     <!-- Cabeçario -->
-    <header>
+    <header id="Home">
         <div class="camera">
             <!-- Espaço das cameras de tela -->
         </div>
         <h1>
             <img src="src/img/img/SIMBOLO BCM 1.png" alt="logo da BCM">
         </h1>
-        <div class="container_de_navegacao">
-            <!-- <nav class="nav_mobile"> Position: sticky; top:0; 
-                <a href="#Home">Home</a>
-                <a href="#Socio">Sócios</a>
-                <a href="#Sobre">Sobre o Escritório</a>
-                <a href="#Atividades">Nossas Atividades</a>
-                <a href="#Contato">Contato / Horário</a>
-                <a href="#Localizaco">Localização</a>
-                <a href="#Artigo">Artigos</a>
-            </nav>
 
+<!-- 
             <nav class="nav_desktop">
                 <a href="#Home">Home</a>
                 <a href="#Socio">Sócios</a>
@@ -38,12 +29,30 @@
                 <a href="#Localizaco">Localização</a>
                 <a href="#Artigo">Artigos</a>
             </nav> -->
-            <img src="src/img/icon/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="simbolo de meu">
+            
         </div>
     </header>
-    
+    <div class="container_de_navegacao">
+        <div onclick="Abre_e_fecha_menu()" class="menu_colunas">
+            <div id="colunas_1" class="colunas"></div>
+            <div id="colunas_2" class="colunas  coluna_2_open coluna_2_closed"></div>
+            <div id="colunas_3" class="colunas  coluna_3_closed coluna_3_open"></div>
+        </div>
+            <a class="btn_whats" href="https://api.whatsapp.com/send?phone=558291072644&text=Ol%C3%A1%20tudo%20bem%20estou%20vindo%20do%20site%20da%20BCM%20gostaria%20de%20falar%20com%20voc%C3%AAs%20sobre%20..."><img src="src/img/icon/whatsapp.png" alt="Link do whatsapp que leva cliente ao contato da empresa"></a>
+
+    <a class="btn_subir" href="#Home"><img src="src/img/icon/stat_1_47dp_05273A_FILL0_wght400_GRAD0_opsz48.png" alt="Subir ao topo"></a>
+    </div>
+    <nav id="Caixa_de_navegacao" class="nav_mobile caixa_M_closed">
+        <a class="link_alteravel" onclick="Abre_e_fecha_menu()" href="#Home">Home</a>
+        <a class="link_alteravel" onclick="Abre_e_fecha_menu()" href="#Socio">Sócios</a>
+        <a class="link_alteravel" onclick="Abre_e_fecha_menu()" href="#Sobre">Sobre o Escritório</a>
+        <a class="link_alteravel" onclick="Abre_e_fecha_menu()" href="#Atividades">Nossas Atividades</a>
+        <a class="link_alteravel" onclick="Abre_e_fecha_menu()" href="#Contato">Contato / Horário</a>
+        <a class="link_alteravel" onclick="Abre_e_fecha_menu()" href="#Localizaco">Localização</a>
+        <a class="link_alteravel" onclick="Abre_e_fecha_menu()" href="#Artigo">Artigos</a>
+    </nav>
     <!-- conteudo principal do site -->
-    <main id="Home">
+    <main>
         <!-- Apresentação de slides -->
          <div class="Apresentacao">
             <div class="slides">
@@ -102,11 +111,9 @@
         <div>
             <p>links de atribuição de creditos</p>
         </div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit maiores magni minus corporis recusandae fugiat, rerum obcaecati nihil consequatur facilis nulla perspiciatis, nisi qui facere iusto reiciendis blanditiis minima error?
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo vel, aut unde omnis dignissimos delectus et quia nostrum maxime nesciunt. Dolorem ex repudiandae fuga facilis soluta, sunt suscipit ad laborum?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, facilis delectus repellat sint in eveniet nulla officiis sunt deserunt et minima fugiat vitae quae nihil similique consequatur? Mollitia, quam ab.
     </footer>
-
-    <!-- botãoes Flutuantes -->
-    <a class="btn_whats" href="https://api.whatsapp.com/send?phone=558291072644&text=Ol%C3%A1%20tudo%20bem%20estou%20vindo%20do%20site%20da%20BCM%20gostaria%20de%20falar%20com%20voc%C3%AAs%20sobre%20..."><img src="src/img/icon/whatsapp.png" alt="Link do whatsapp que leva cliente ao contato da empresa"></a>
-
-    <a class="btn_subir" href="#Home"><img src="src/img/icon/stat_1_47dp_05273A_FILL0_wght400_GRAD0_opsz48.png" alt="Subir ao topo"></a>
 </body>
 </html>
