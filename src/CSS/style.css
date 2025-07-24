@@ -47,7 +47,7 @@ body{
     /* Botão de whatsApp */
     .btn_whats{
         
-        position: absolute;
+        position: fixed;
             right: 24px;
             bottom: 24px;
             width: 46px;
@@ -86,7 +86,7 @@ body{
         }
         
     .btn_subir{
-        position: absolute;
+        position: fixed;
             left: 24px;
             bottom: 24px;
         width: 46px;
@@ -95,6 +95,7 @@ body{
         border: solid var(--cor-azul-profundo) 2px;
         border-radius: 24px;
         box-shadow: #000 2px 2px 5px ;
+        background: var(--cor-cinza);
     }
     
     .btn_subir img{
@@ -144,7 +145,7 @@ body{
         padding: 9.58% 28%;
 
         background-color: var(--cor-amarela);
-
+        z-index: 100;
     }
 
     .menu_colunas{
@@ -249,6 +250,7 @@ body{
         row-gap: 10px;
 
         background: var(--cor-cinza);
+        z-index: 100;
     }
 
     .caixa_M_open{
@@ -330,6 +332,7 @@ body{
     }
 
     .Apresentacao{
+        position: relative;
         width: 100vw;
         height: 573px;
     }
@@ -337,14 +340,112 @@ body{
     .slides{
         display: flex;
         flex-flow: row nowrap;
-        width: 300vw;
+        width: 400vw;
         height: 100%;
+        
     }
 
     .slide{
+        position: relative;
+        width: 100vw;
+        height: 100%;
+        padding: 20px;
+
+        background: #05273A;
+
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        transition: 0.5s ease-in-out;
+    }
+
+    .slide img{
         width: 100%;
         height: 100%;
-        background: #05273A;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.15;
+    }
+
+    .slide h3{
+        font-weight: 500;
+        font-family: F_M_Regular;
+        font-size: 32px;
+        text-align: center;
+        color: var(--cor-cinza);
+    }
+
+    .slide p{
+        font-family: F_M_Regular;
+        font-size: 18.6px ;
+        text-align: center;
+        color: var(--cor-cinza);
+    }
+
+    .slide button{
+        margin: 0 auto;
+        
+        width: 306px;
+        height: 50px;
+        border-radius: 10px;
+        
+        background-color: var(--cor-amarela);
+        color: var(--cor-azul-noturno);
+
+        font-family: F_M_Regular;
+        font-size: 20px;
+        font-weight: 800;
+    }
+
+    /* inicio das alterações para slides que alteram */
+    .Apresentacao input{
+        display: none;
+    }
+
+    .navegacao-manual{
+        position: absolute;
+        width: 100vw;
+        margin-top: -45px;
+        display: flex;
+        justify-content: center;
+        column-gap: 25px;
+    }
+
+    .manual-btn{
+        width: 24px;
+        height: 24px;
+        
+        border: 2px solid var(--cor-cinza);
+        
+        border-radius: 15px;
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+    }
+
+    .manual-btn:hover{
+        background-color: var(--cor-cinza);
+    }
+
+    .manual-btn-selected{
+        border: none;
+        background-color: var(--cor-amarela);
+    }
+
+    #slide_1:checked ~ .first{
+        margin-left: 0;
+    }
+
+    #slide_2:checked ~ .first{
+        margin-left: -25%;
+    }
+
+    #slide_3:checked ~ .first{
+        margin-left: -50%;
+    }
+
+    #slide_4:checked ~ .first{
+        margin-left: -75%;
     }
 }
 

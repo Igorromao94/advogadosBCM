@@ -1,5 +1,4 @@
 let status_do_menu = true;
-
 let coluna_1 = document.getElementById('colunas_1')
 let coluna_2 = document.getElementById('colunas_2')
 let coluna_3 = document.getElementById('colunas_3')
@@ -50,4 +49,26 @@ function Abre_e_fecha_menu() {
 
         status_do_menu= !status_do_menu
     }
+}
+
+
+function selecionar_slide(){
+const radioButtons = document.querySelectorAll('input[name="radio_btn_slid"]');
+const btn_manual = document.getElementsByName('btn_manual');
+
+// Adiciona o event listener a cada radio button
+radioButtons.forEach((radio, index) => {
+    radio.addEventListener('change', function() {
+        if (this.checked) {
+            console.log(`Radio button selecionado: ${this.value}`);
+            console.log(`Índice do radio button: ${index}`);
+            for (let i = 0; i < btn_manual.length; i++) {
+                btn_manual[i].classList.remove('manual-btn-selected')
+            }
+            btn_manual[index].classList.add('manual-btn-selected')
+        }
+    });
+});
+
+console.log(btn_manual)
 }

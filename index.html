@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    
+<head> 
     <link rel="stylesheet" href="src/CSS/style.css">
     <script src="src/JS/script.js" defer></script>
     <meta charset="UTF-8">
@@ -38,9 +37,7 @@
             <div id="colunas_2" class="colunas  coluna_2_open coluna_2_closed"></div>
             <div id="colunas_3" class="colunas  coluna_3_closed coluna_3_open"></div>
         </div>
-            <a class="btn_whats" href="https://api.whatsapp.com/send?phone=558291072644&text=Ol%C3%A1%20tudo%20bem%20estou%20vindo%20do%20site%20da%20BCM%20gostaria%20de%20falar%20com%20voc%C3%AAs%20sobre%20..."><img src="src/img/icon/whatsapp.png" alt="Link do whatsapp que leva cliente ao contato da empresa"></a>
-
-    <a class="btn_subir" href="#Home"><img src="src/img/icon/stat_1_47dp_05273A_FILL0_wght400_GRAD0_opsz48.png" alt="Subir ao topo"></a>
+           
     </div>
     <nav id="Caixa_de_navegacao" class="nav_mobile caixa_M_closed">
         <a class="link_alteravel" onclick="Abre_e_fecha_menu()" href="#Home">Home</a>
@@ -55,8 +52,18 @@
     <main>
         <!-- Apresentação de slides -->
          <div class="Apresentacao">
+            
+            <!-- Radio button -->
+
+            <!-- slides que vão alterar entre si -->
             <div class="slides">
-                <div class="slide slide_1">
+                <input type="radio" name="radio_btn_slid" id="slide_1" checked>
+                <input type="radio" name="radio_btn_slid" id="slide_2">
+                <input type="radio" name="radio_btn_slid" id="slide_3">
+                <input type="radio" name="radio_btn_slid" id="slide_4">
+
+                <div class="slide slide_1 first">
+                    <img src="src/img/img/ChatGPT Image 24 de jul. de 2025, 11_12_32.png" alt="imagem de uma balança e um martelo ao fundo">
                     <h3>
                         Ações contra o INSS e contra o Regime Próprio da Previdência Social
                     </h3>
@@ -66,17 +73,33 @@
                     <button>Fale Conosco</button>
                 </div>
                 <div class="slide slide_2">
+                    <img src="src/img/img/ChatGPT Image 24 de jul. de 2025, 11_12_32.png" alt="imagem de uma balança e um martelo ao fundo">
                     <h3>Especialistas em várias áreas do Direito</h3>
                     <p>Somos um escritório full service, comprometido em atender aos seus interesses com excelência e assegurar que seus direitos sejam respeitados.</p>
                     <button>Fale Conosco</button>
                 </div>
                 <div class="slide slide_3">
+                    <img src="src/img/img/ChatGPT Image 24 de jul. de 2025, 11_12_32.png" alt="imagem de uma balança e um martelo ao fundo">
                     <h3>Profissionais de Excelência</h3>
                     <p>Nossos profissionais altamente qualificados estão prontos para agilizar seu processo e garantir seus direitos na Justiça com seriedade e transparência.</p>
                     <button>Fale Conosco</button>
                 </div>
+                <div class="slide slide_4">
+                    <img src="src/img/img/ChatGPT Image 24 de jul. de 2025, 11_12_32.png" alt="imagem de uma balança e um martelo ao fundo">
+                    <h3>Profissionais de ultima</h3>
+                    <p>Nossos profissionais altamente qualificados estão prontos para agilizar seu processo e garantir seus direitos na Justiça com seriedade e transparência.</p>
+                    <button>Fale Conosco</button>
+                </div>
             </div>
-         </div>
+
+            <div class="navegacao-manual">
+                <label name="btn_manual" class="manual-btn manual-btn-selected" onclick="selecionar_slide()" for="slide_1"></label>
+                <label name="btn_manual" class="manual-btn" onclick="selecionar_slide()" for="slide_2"></label>
+                <label name="btn_manual" class="manual-btn" onclick="selecionar_slide()" for="slide_3"></label>
+                <label name="btn_manual" class="manual-btn" onclick="selecionar_slide()" for="slide_4"></label>
+            </div>
+        </div>
+
 
         <!-- Titulos desejados -->
 
@@ -111,9 +134,16 @@
         <div>
             <p>links de atribuição de creditos</p>
         </div>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit maiores magni minus corporis recusandae fugiat, rerum obcaecati nihil consequatur facilis nulla perspiciatis, nisi qui facere iusto reiciendis blanditiis minima error?
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo vel, aut unde omnis dignissimos delectus et quia nostrum maxime nesciunt. Dolorem ex repudiandae fuga facilis soluta, sunt suscipit ad laborum?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, facilis delectus repellat sint in eveniet nulla officiis sunt deserunt et minima fugiat vitae quae nihil similique consequatur? Mollitia, quam ab.
     </footer>
+     <a class="btn_whats" href="https://api.whatsapp.com/send?phone=558291072644&text=Ol%C3%A1%20tudo%20bem%20estou%20vindo%20do%20site%20da%20BCM%20gostaria%20de%20falar%20com%20voc%C3%AAs%20sobre%20..."><img src="src/img/icon/whatsapp.png" alt="Link do whatsapp que leva cliente ao contato da empresa"></a>
+
+    <a class="btn_subir" href="#Home"><img src="src/img/icon/stat_1_47dp_05273A_FILL0_wght400_GRAD0_opsz48.png" alt="Subir ao topo"></a>
 </body>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci repudiandae harum, dignissimos saepe iure architecto aliquam nihil doloribus mollitia? Voluptatum est dolorem hic odit fugit odio minus consequatur explicabo saepe!
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis quia mollitia consectetur culpa! Deleniti doloribus rerum nulla ea, adipisci cumque voluptas aspernatur iure, voluptatum nostrum saepe? Accusamus reprehenderit eum asperiores?
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed dolorem in ab est quaerat unde, quo, numquam ea facilis, expedita odio inventore quibusdam labore a harum neque fuga perferendis eos!
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio et ipsum ratione voluptatem maxime autem deserunt quaerat atque illo libero provident consequuntur velit laudantium ad sequi eum vitae, iste temporibus.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis impedit libero ad velit laboriosam hic harum dolores placeat rerum magni doloremque voluptatem suscipit voluptates animi, tempore delectus architecto, quos ipsam!
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur suscipit sunt ipsam, dolorum incidunt iste rerum voluptate fugit similique perferendis a atque fugiat, eveniet est ducimus, obcaecati nam? Nemo, consequuntur!
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, temporibus fugit dicta minus qui est, assumenda soluta unde dolorem obcaecati et sapiente, necessitatibus aliquam totam beatae quaerat perspiciatis! Nulla, placeat.
 </html>
