@@ -21,6 +21,7 @@ function Abre_e_fecha_menu() {
 
         caixa_de_nav.classList.add('caixa_M_open')
         caixa_de_nav.classList.remove('caixa_M_closed')
+        caixa_de_nav.classList.remove('desativo')
 
         linksArray.forEach(function(link) {
             link.classList.add('link_alteravel_open');
@@ -51,10 +52,10 @@ function Abre_e_fecha_menu() {
     }
 }
 
-
-function selecionar_slide(){
 const radioButtons = document.querySelectorAll('input[name="radio_btn_slid"]');
 const btn_manual = document.getElementsByName('btn_manual');
+
+function selecionar_slide(){
 
 // Adiciona o event listener a cada radio button
 radioButtons.forEach((radio, index) => {

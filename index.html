@@ -34,12 +34,12 @@
     <div class="container_de_navegacao">
         <div onclick="Abre_e_fecha_menu()" class="menu_colunas">
             <div id="colunas_1" class="colunas"></div>
-            <div id="colunas_2" class="colunas  coluna_2_open coluna_2_closed"></div>
-            <div id="colunas_3" class="colunas  coluna_3_closed coluna_3_open"></div>
+            <div id="colunas_2" class="colunas"></div>
+            <div id="colunas_3" class="colunas"></div>
         </div>
            
     </div>
-    <nav id="Caixa_de_navegacao" class="nav_mobile caixa_M_closed">
+    <nav id="Caixa_de_navegacao" class="desativo nav_mobile caixa_M_closed">
         <a class="link_alteravel" onclick="Abre_e_fecha_menu()" href="#Home">Home</a>
         <a class="link_alteravel" onclick="Abre_e_fecha_menu()" href="#Socio">Sócios</a>
         <a class="link_alteravel" onclick="Abre_e_fecha_menu()" href="#Sobre">Sobre o Escritório</a>
@@ -50,7 +50,7 @@
     </nav>
     <!-- conteudo principal do site -->
     <main>
-        <!-- Apresentação de slides -->
+<!-- Apresentação de slides -->
          <div class="Apresentacao">
             
             <!-- Radio button -->
@@ -100,14 +100,100 @@
             </div>
         </div>
 
+<!-- Titulos desejados -->
+        <div class="containder_titulos">
+            <div class="titulos_desejados">
+                <div>
+                    <img src="src/img/icon/plano-de-aposentadoria.png" alt="">
+                    <h3>Aposentadorias e Revisão de Aposentadoria</h3>
+                    <p>Garanta seu direito</p>
+                </div>
+            </div>
+            
+            <div class="titulos_desejados">
+                <div>
+                    <img src="src/img/icon/senior.png" alt="">
+                    <h3>BPC/LOAS</h3>
+                    <p>Para deficientes e idosos</p>
+                </div>
+            </div>
+            
+            <div class="titulos_desejados">
+                <div>
+                    <img src="src/img/icon/mao-com-coracao.png" alt="">
+                    <h3>Auxílio-doença e Auxílio-Acidente</h3>
+                    <p>Fale conosco</p>
+                </div>
+            </div>
+        </div>
 
-        <!-- Titulos desejados -->
+<!-- Socios do Escritorio -->
+        <div id="Socio" class="container_socios">
+           <h2>Socios do Escritorio</h2>
+           
+           <div class="card_do_socio socio_1">
+                <h3>Marcos Calheiros</h3>
+                <img src="src/img/img/Dr.png" alt="Foto do Marcos Calheiros">
+                <div>
+                   <strong>Advogado especialista</strong> em <strong>Direito Previdenciário </strong>
+                </div>
+            </div>
+            
+            <div class="card_do_socio socio_2">
+                <h3>Juliana Bezerra</h3>
+                <img src="src/img/img/drº.png" alt="foto da drª Juliana Bezerra">
+                <div>
+                    <strong>Advogada especialista</strong> em <strong>Previdenciário</strong>
+                </div>
+            </div>
+            
+            <div class="card_do_socio socio_3">
+                <h3>William Macedo</h3>
+                <img src="src/img/img/william.png" alt="foto do socio William Macedo">
+                <div>
+                    <strong>Advogado Especialista</strong> em <strong>Direito do Trabalho</strong>
+                </div>
+            </div>
+        </div>
+        
+    <!-- Sobre o Escritorio -->
+        <article id="Sobre" class="Sobre_o_escritorio">
+            <h2>
+                Sobre o Escritório
+            </h2>
+            <img src="src/img/img/BCM 2.2.png" alt="logo tipo da BCM Advogados">
+            <div class="container_p">
+                <p>
+                    &emsp;<strong>BCM Advogados</strong> é um escritório jurídico comprometido com a <strong>excelência</strong>, a <strong>ética</strong> e a <strong>transparência</strong> no atendimento aos seus clientes. Com <strong>forte atuação na área previdenciária</strong>, somos especializados em <strong>assegurar os direitos dos segurados</strong>, oferecendo uma <strong>assessoria jurídica personalizada, eficiente e voltada para resultados concretos</strong>.
+                </p>
+                <p>
+                    &emsp;Atuamos também em <strong>diversas outras áreas do Direito</strong>, sempre com o mesmo padrão de <strong>dedicação, responsabilidade e respeito</strong> às necessidades individuais de cada cliente.
+                </p>
+                <p>
+                    &emsp;Trabalhamos com <strong>transparência em todas as etapas do processo</strong>, mantendo nossos clientes <strong>informados e acolhidos</strong>.
+                </p>
+                <p>
+                    &emsp;No <strong>BCM Advogados</strong>, acreditamos que a advocacia deve ser exercida com <strong>responsabilidade social</strong>, construindo <strong>relações de confiança</strong> e promovendo <strong>justiça com ética e profissionalismo</strong>.
+                </p>
+            </div>
+        </article>
 
-        <!-- Socios do Escritorio -->
+    <!-- Nossas Atividades -->
+        <div id="Atividades" class="divisoes_atividades">
+            <h2>Nossas Atividades</h2>
 
-        <!-- Sobre o Escritorio -->
+            <div class="container_atividades">
+                <div class="_card_atividade">
+                    <img src="" alt="icone">
+                    <h3>Titulo da Atividade</h3>
+                    <p>descrição da Atividade</p>
+                    <a href="">
+                        <div>Saiba Mais</div>
+                    </a>
+                </div>
+            </div>
 
-        <!-- Nossas Atividades -->
+        </div>
 
         <!-- Nossos Contatos -->
 
@@ -139,11 +225,4 @@
 
     <a class="btn_subir" href="#Home"><img src="src/img/icon/stat_1_47dp_05273A_FILL0_wght400_GRAD0_opsz48.png" alt="Subir ao topo"></a>
 </body>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci repudiandae harum, dignissimos saepe iure architecto aliquam nihil doloribus mollitia? Voluptatum est dolorem hic odit fugit odio minus consequatur explicabo saepe!
-Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis quia mollitia consectetur culpa! Deleniti doloribus rerum nulla ea, adipisci cumque voluptas aspernatur iure, voluptatum nostrum saepe? Accusamus reprehenderit eum asperiores?
-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed dolorem in ab est quaerat unde, quo, numquam ea facilis, expedita odio inventore quibusdam labore a harum neque fuga perferendis eos!
-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio et ipsum ratione voluptatem maxime autem deserunt quaerat atque illo libero provident consequuntur velit laudantium ad sequi eum vitae, iste temporibus.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis impedit libero ad velit laboriosam hic harum dolores placeat rerum magni doloremque voluptatem suscipit voluptates animi, tempore delectus architecto, quos ipsam!
-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur suscipit sunt ipsam, dolorum incidunt iste rerum voluptate fugit similique perferendis a atque fugiat, eveniet est ducimus, obcaecati nam? Nemo, consequuntur!
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, temporibus fugit dicta minus qui est, assumenda soluta unde dolorem obcaecati et sapiente, necessitatibus aliquam totam beatae quaerat perspiciatis! Nulla, placeat.
 </html>
