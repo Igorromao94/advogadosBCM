@@ -10,7 +10,6 @@ let linksArray = Array.from(link_menu);
 function Abre_e_fecha_menu() {
     //Abrindo o menu
     if (status_do_menu) {
-        console.log("Menu Esta Aberto")
         status_do_menu= !status_do_menu
         coluna_1.classList.add('coluna_1_open')
         coluna_1.classList.remove('coluna_1_closed')
@@ -30,7 +29,6 @@ function Abre_e_fecha_menu() {
 
     } else{
     // Fechando o menu
-        console.log("Menu Esta fechado")
         coluna_1.classList.add('coluna_1_closed')
         coluna_1.classList.remove('coluna_1_open')
         coluna_2.classList.add('coluna_2_closed')
@@ -61,8 +59,6 @@ function selecionar_slide(){
 radioButtons.forEach((radio, index) => {
     radio.addEventListener('change', function() {
         if (this.checked) {
-            console.log(`Radio button selecionado: ${this.value}`);
-            console.log(`Índice do radio button: ${index}`);
             for (let i = 0; i < btn_manual.length; i++) {
                 btn_manual[i].classList.remove('manual-btn-selected')
             }
@@ -71,5 +67,4 @@ radioButtons.forEach((radio, index) => {
     });
 });
 
-console.log(btn_manual)
 }
