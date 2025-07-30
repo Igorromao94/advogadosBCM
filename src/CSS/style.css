@@ -487,7 +487,7 @@ body{
 
 /* Areá dos socios */
     .container_socios{
-        background: var(--cor-azul-noturno);
+        background: var(--cor-cinza);
         width: 100%;
         padding: 15px 0;
         display: flex;
@@ -498,7 +498,7 @@ body{
 
     .container_socios h2{
         margin:18px;
-        color: var(--cor-amarela);
+        color: var(--cor-azul-noturno);
         font-family: var(--fonte-regular);
         font-weight: 100;
         font-size: 36px;
@@ -522,22 +522,21 @@ body{
             top: 10px;
             font-family: var(--fonte-regular);
             font-weight: 400;
-            color: var(--cor-amarela);
+            color: var(--cor-azul-noturno);
     }
 
     .card_do_socio div{
         position: absolute;
-        top: calc(338px - (127px/2));
+        top: calc(65%);
 
         width: 192px;
-        height: 127px;
+        height: 90px;
         
-        padding: 5px;
 
-        background-color: var(--cor-cinza);
+        background-color: var(--cor-azul-noturno);
         border: solid 1px var(--cor-azul-profundo);
         border-radius: 10px;
-        box-shadow: 0 4 4 rgba(0, 0, 0, 0.25);
+        box-shadow: 0 4 4 rgba(253, 253, 253, 0.25);
 
         text-align: center;
         display: flex;
@@ -546,7 +545,9 @@ body{
         align-items: center;
 
         font-family: var(--fonte-bold-regular);
-        color: var(--cor-azul-noturno);
+        color: var(--cor-amarela);
+
+        border: solid 1px var(--cor-cinza);
     }
 
     .card_do_socio img{
@@ -609,6 +610,7 @@ body{
         justify-content: space-between;
         align-items: center;
         padding:0 20px;
+        background: var(--cor-azul-profundo);
     }
 
     .Sobre_o_escritorio h2{
@@ -641,8 +643,8 @@ body{
     }
 
     .Sobre_o_escritorio .container_p p{
-        font-family: var(--fonte-regular);
-        color: var(--cor-azul-noturno);
+        font-family: var(--fonte-bold-regular);
+        color: var(--cor-cinza);
         font-size: 18px;
         font-weight: 100;
         text-align: justify;
