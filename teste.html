@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Slide Horizontal</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      font-family: sans-serif;
+    }
+
+    .carrossel {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      gap: 16px;
+      padding: 16px;
+    }
+
+    .slide {
+      flex: 0 0 80%;
+      height: 200px;
+      background-color: #3498db;
+      border-radius: 12px;
+      scroll-snap-align: start;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 24px;
+    }
+
+    /* Opcional: Remover scrollbar visual */
+    .carrossel::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="carrossel" class="carrossel">
+    <div class="slide">Slide 1</div>
+    <div class="slide">Slide 2</div>
+    <div class="slide">Slide 3</div>
+    <div class="slide">Slide 4</div>
+  </div>
+
+</body>
+
+<script>
+  const carrossel = document.getElementById('carrossel');
+
+  carrossel.addEventListener('scroll', () => {
+    console.log('Scroll horizontal atual:', carrossel.scrollLeft);
+  });
+</script>
+</html>

@@ -30,7 +30,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-padding-top: 167px; 
+    scroll-padding-top: calc(10vh - 2px); 
     scroll-behavior: initial;
     
 }
@@ -146,9 +146,8 @@ body{
         align-content: center;
         
         width: 100vw;
-        height: 168px;
+        height: 10vh;
         
-        padding: 9.58% 28%;
         
         background-color: var(--cor-amarela);
         z-index: 100;
@@ -167,7 +166,7 @@ body{
 
     .colunas{
         height: 10px;
-        width: 80px;
+        width: calc(100vw*0.15);
         border-radius: 3px;
         background: var(--cor-azul-noturno);    
     }
@@ -245,7 +244,7 @@ body{
     .nav_mobile{
         position: sticky;
         width: 100vw;
-        top: 166px;
+        top: calc(10vh - 2px);
 
         display: flex;
         flex-flow: column  nowrap;
@@ -344,15 +343,21 @@ body{
     .slides{
         display: flex;
         flex-flow: row nowrap;
-        width: 400vw;
         height: 100%;
         
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        
+    }
+
+    .slides::-webkit-scrollbar {
+      display: none;
     }
 
     .slide{
         position: relative;
         width: 100vw;
-        height: 100%;
         padding: 20px;
 
         background: #05273A;
@@ -360,6 +365,10 @@ body{
         display: flex;
         flex-flow: column nowrap;
         justify-content: space-around;
+        transition: 0.5s ease-in-out;
+        scroll-snap-align: start;
+        flex-shrink: 0;
+
         transition: 0.5s ease-in-out;
     }
 
@@ -390,7 +399,7 @@ body{
     .slide button{
         margin: 0 auto;
         
-        width: 306px;
+        width: calc(60%);
         height: 50px;
         border-radius: 10px;
         
@@ -430,22 +439,6 @@ body{
     .manual-btn-selected{
         border: none;
         background-color: var(--cor-amarela);
-    }
-
-    #slide_1:checked ~ .first{
-        margin-left: 0;
-    }
-
-    #slide_2:checked ~ .first{
-        margin-left: -25%;
-    }
-
-    #slide_3:checked ~ .first{
-        margin-left: -50%;
-    }
-
-    #slide_4:checked ~ .first{
-        margin-left: -75%;
     }
 
 /* Titulos Desejados */
