@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <script src="src/JS/script.js" defer></script>
+    <title>Carroceu</title>
+</head>
+<body>
+    <main>
+        <div class="enquadrar">
+            <div class="apresentacao_container">
+                <!-- Quantidade de input radio é igual a quantidade de slides -->
+                <input type="radio" name="selecao_do_slide" id="radio_slide_1" checked>
+                <input type="radio" name="selecao_do_slide" id="radio_slide_2">
+                <input type="radio" name="selecao_do_slide" id="radio_slide_3">
+                <input type="radio" name="selecao_do_slide" id="radio_slide_4">
+                <div id="slide_container" class="slide_container">
+                    <div class="slide">
+                        <h3>Titulo desejado Aqui</h3>
+                        <img class="img_fundo" src="src/img/img/22640605-abstrato-aguarela-fundo-ai-gerado-gratis-foto.webp" alt="img de fundo">                    
+                        <img class="img_ilustracao" src="" alt="ilustração">
+                        <p class="slide_texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolor asperiores officiis, eaque beatae impedit quisquam rem id sapiente, deleniti vel molestiae dolorem. Sunt nihil vitae consectetur. Consequatur, rem natus.</p>
+                        <div class="area_do_botao">
+                            <a href="#">Click aqui</a>
+                        </div>
+                    </div>
+    
+                    <div class="slide">
+                        <h3>Titulo desejado Aqui</h3>
+                        <img class="img_fundo" src="src/img/img/22640605-abstrato-aguarela-fundo-ai-gerado-gratis-foto.webp" alt="img de fundo">                    
+                        <img class="img_ilustracao" src="" alt="ilustração">
+                        <p class="slide_texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolor asperiores officiis, eaque beatae impedit quisquam rem id sapiente, deleniti vel molestiae dolorem. Sunt nihil vitae consectetur. Consequatur, rem natus.</p>
+                        <div class="area_do_botao">
+                            <a href="#">Click aqui</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <h3>Titulo desejado Aqui</h3>
+                        <img class="img_fundo" src="src/img/img/22640605-abstrato-aguarela-fundo-ai-gerado-gratis-foto.webp" alt="img de fundo">                    
+                        <img class="img_ilustracao" src="" alt="ilustração">
+                        <p class="slide_texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolor asperiores officiis, eaque beatae impedit quisquam rem id sapiente, deleniti vel molestiae dolorem. Sunt nihil vitae consectetur. Consequatur, rem natus.</p>
+                        <div class="area_do_botao">
+                            <a href="#">Click aqui</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <h3>Titulo desejado Aqui</h3>
+                        <img class="img_fundo" src="src/img/img/22640605-abstrato-aguarela-fundo-ai-gerado-gratis-foto.webp" alt="img de fundo">                    
+                        <img class="img_ilustracao" src="" alt="ilustração">
+                        <p class="slide_texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolor asperiores officiis, eaque beatae impedit quisquam rem id sapiente, deleniti vel molestiae dolorem. Sunt nihil vitae consectetur. Consequatur, rem natus.</p>
+                        <div class="area_do_botao">
+                            <a href="#">Click aqui</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu_manual">
+                    <label name="btn_slide" class="btn_troca_de_slide botao_slide_selecionado" for="radio_slide_1"></label>
+                    <label name="btn_slide" class="btn_troca_de_slide" for="radio_slide_2"></label>
+                    <label name="btn_slide" class="btn_troca_de_slide" for="radio_slide_3"></label>
+                    <label name="btn_slide" class="btn_troca_de_slide" for="radio_slide_4"></label>
+                </div>
+
+                <div class="nav_slide">
+                    <div onclick="voltar_slide(),pausarERetomar(10)" class="seta_esquerda">
+                        ←
+                    </div>
+
+                    <div onclick="proximo_slide(),pausarERetomar(10)" class="seta_direita">
+                        →
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

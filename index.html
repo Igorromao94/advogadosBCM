@@ -11,14 +11,15 @@
 <body>
     <!-- Cabeçario -->
     <header id="Home">
-        <div class="camera">
-            <!-- Espaço das cameras de tela -->
-        </div>
-        <h1>
-            <img src="src/img/img/SIMBOLO BCM 1.png" alt="logo da BCM">
-        </h1>
+        <div class="limitador">
 
-<!-- 
+            <div class="camera">
+                <!-- Espaço das cameras de tela -->
+            </div>
+            <h1>
+                <img src="src/img/img/SIMBOLO BCM 1.png" alt="logo da BCM">
+            </h1>
+            
             <nav class="nav_desktop">
                 <a href="#Home">Home</a>
                 <a href="#Socio">Sócios</a>
@@ -26,10 +27,7 @@
                 <a href="#Atividades">Nossas Atividades</a>
                 <a href="#Contato">Contato / Horário</a>
                 <a href="#Localizaco">Localização</a>
-                <a href="#Artigo">Artigos</a>
             </nav> 
--->
-            
         </div>
     </header>
     <div class="container_de_navegacao">
@@ -38,7 +36,6 @@
             <div id="colunas_2" class="colunas"></div>
             <div id="colunas_3" class="colunas"></div>
         </div>
-           
     </div>
     <nav id="Caixa_de_navegacao" class="desativo nav_mobile caixa_M_closed">
         <a class="link_alteravel" onclick="Abre_e_fecha_menu()" href="#Home">Home</a>
@@ -47,15 +44,12 @@
         <a class="link_alteravel" onclick="Abre_e_fecha_menu()" href="#Atividades">Nossas Atividades</a>
         <a class="link_alteravel" onclick="Abre_e_fecha_menu()" href="#Contato">Contato / Horário</a>
         <a class="link_alteravel" onclick="Abre_e_fecha_menu()" href="#Localizacao">Localização</a>
-        <a class="link_alteravel" onclick="Abre_e_fecha_menu()" href="#Artigo">Artigos</a>
+
     </nav>
     <!-- conteudo principal do site -->
     <main>
 <!-- Apresentação de slides -->
          <div class="Apresentacao">
-            
-            <!-- Radio button -->
-
             <!-- slides que vão alterar entre si -->
             <div id="slides" class="slides">
                 <input type="radio" name="radio_btn_slid" id="slide_1" checked>
@@ -65,31 +59,39 @@
 
                 <div class="slide slide_1 first">
                     <img src="src/img/img/ChatGPT Image 24 de jul. de 2025, 11_12_32.png" alt="imagem de uma balança e um martelo ao fundo">
-                    <h3>
-                        Ações contra o INSS e contra o Regime Próprio da Previdência Social
-                    </h3>
-                    <p>
-                        Somos <strong>especialistas</strong> em <strong> Direito Previdenciário</strong>, com <strong> vasta experiência</strong>, garantindo seu direito com Justiça.
-                    </p>
-                    <button>Fale Conosco</button>
+                    <div class="limitador_da_apresentacao">
+                        <h3>
+                            Ações contra o INSS e contra o Regime Próprio da Previdência Social
+                        </h3>
+                        <p>
+                            Somos <strong>especialistas</strong> em <strong> Direito Previdenciário</strong>, com <strong> vasta experiência</strong>, garantindo seu direito com Justiça.
+                        </p>
+                        <button>Fale Conosco</button>
+                    </div>
                 </div>
                 <div class="slide slide_2">
                     <img src="src/img/img/ChatGPT Image 24 de jul. de 2025, 11_12_32.png" alt="imagem de uma balança e um martelo ao fundo">
-                    <h3>Especialistas em várias áreas do Direito</h3>
-                    <p>Somos um escritório full service, comprometido em atender aos seus interesses com excelência e assegurar que seus direitos sejam respeitados.</p>
-                    <button>Fale Conosco</button>
+                    <div class="limitador_da_apresentacao">
+                        <h3>Especialistas em várias áreas do Direito</h3>
+                        <p>Somos um escritório full service, comprometido em atender aos seus interesses com excelência e assegurar que seus direitos sejam respeitados.</p>
+                        <button>Entre em contato</button>
+                    </div>
                 </div>
                 <div class="slide slide_3">
                     <img src="src/img/img/ChatGPT Image 24 de jul. de 2025, 11_12_32.png" alt="imagem de uma balança e um martelo ao fundo">
-                    <h3>Profissionais de Excelência</h3>
-                    <p>Nossos profissionais altamente qualificados estão prontos para agilizar seu processo e garantir seus direitos na Justiça com seriedade e transparência.</p>
-                    <button>Fale Conosco</button>
+                    <div class="limitador_da_apresentacao">
+                        <h3>Profissionais de Excelência</h3>
+                        <p>Nossos profissionais altamente qualificados estão prontos para agilizar seu processo e garantir seus direitos na Justiça com seriedade e transparência.</p>
+                        <button>Saiba mais</button>
+                    </div>
                 </div>
                 <div class="slide slide_4">
                     <img src="src/img/img/ChatGPT Image 24 de jul. de 2025, 11_12_32.png" alt="imagem de uma balança e um martelo ao fundo">
-                    <h3>Profissionais de ultima</h3>
-                    <p>Nossos profissionais altamente qualificados estão prontos para agilizar seu processo e garantir seus direitos na Justiça com seriedade e transparência.</p>
-                    <button>Fale Conosco</button>
+                    <div class="limitador_da_apresentacao">
+                        <h3>Atendimento Exclusivo e personalizado</h3>
+                        <p>Atendimento humanizado, com foco total nas suas necessidades e objetivos.</p>
+                        <button>Fale conosco</button>
+                    </div>
                 </div>
             </div>
 
@@ -103,27 +105,29 @@
 
 <!-- Titulos desejados -->
         <div class="containder_titulos">
-            <div class="titulos_desejados">
-                <div>
-                    <img src="src/img/icon/ChatGPT Image 28 de jul. de 2025, 17_31_41.png" alt="">
-                    <h3>Aposentadorias e Revisão de Aposentadoria</h3>
-                    <p>Garanta seu direito</p>
+            <div class="limitador_titulos">
+                <div class="titulos_desejados">
+                    <div>
+                        <img src="src/img/icon/ChatGPT Image 28 de jul. de 2025, 17_31_41.png" alt="">
+                        <h3>Aposentadorias e Revisão de Aposentadoria</h3>
+                        <p>Garanta seu direito</p>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="titulos_desejados">
-                <div>
-                    <img src="src/img/icon/senior.png" alt="">
-                    <h3>BPC/LOAS</h3>
-                    <p>Para deficientes e idosos</p>
+                
+                <div class="titulos_desejados">
+                    <div>
+                        <img src="src/img/icon/senior.png" alt="">
+                        <h3>BPC/LOAS</h3>
+                        <p>Para deficientes e idosos</p>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="titulos_desejados">
-                <div>
-                    <img src="src/img/icon/mao-com-coracao.png" alt="">
-                    <h3>Auxílio-doença e Auxílio-Acidente</h3>
-                    <p>Fale conosco</p>
+                
+                <div class="titulos_desejados">
+                    <div>
+                        <img src="src/img/icon/mao-com-coracao.png" alt="">
+                        <h3>Auxílio-doença e Auxílio-Acidente</h3>
+                        <p>Fale conosco</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -131,30 +135,31 @@
 <!-- Socios do Escritorio -->
         <div id="Socio" class="container_socios">
            <h2>Socios do Escritorio</h2>
-           
-           <div class="card_do_socio socio_1">
-                <h3>Marcos Calheiros</h3>
-                <img src="src/img/img/Dr1.png" alt="Foto do Marcos Calheiros">
-                <div>
-                   <strong>Advogado especialista</strong> em <strong>Direito Previdenciário </strong>
+           <div class="limitador_socios">
+               <div class="card_do_socio socio_1">
+                    <h3>Marcos Calheiros</h3>
+                    <img src="src/img/img/Dr1.png" alt="Foto do Marcos Calheiros">
+                    <div>
+                       <strong>Advogado especialista</strong> em <strong>Direito Previdenciário </strong>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="card_do_socio socio_2">
-                <h3>Juliana Bezerra</h3>
-                <img src="src/img/img/drº.png" alt="foto da drª Juliana Bezerra">
-                <div>
-                    <strong>Advogada especialista</strong> em <strong>Previdenciário</strong>
+                
+                <div class="card_do_socio socio_2">
+                    <h3>Juliana Bezerra</h3>
+                    <img src="src/img/img/drº.png" alt="foto da drª Juliana Bezerra">
+                    <div>
+                        <strong>Advogada especialista</strong> em <strong>Previdenciário</strong>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="card_do_socio socio_3">
-                <h3>William Macedo</h3>
-                <img src="src/img/img/william.png" alt="foto do socio William Macedo">
-                <div>
-                    <strong>Advogado Especialista</strong> em <strong>Direito do Trabalho</strong>
+                
+                <div class="card_do_socio socio_3">
+                    <h3>William Macedo</h3>
+                    <img src="src/img/img/william.png" alt="foto do socio William Macedo">
+                    <div>
+                        <strong>Advogado Especialista</strong> em <strong>Direito do Trabalho</strong>
+                    </div>
                 </div>
-            </div>
+           </div>
         </div>
         
     <!-- Sobre o Escritorio -->
@@ -163,108 +168,109 @@
                 Sobre o Escritório
             </h2>
             <img src="src/img/img/BCM 2.2.png" alt="logo tipo da BCM Advogados">
-            <div class="container_p">
-                <p>
-                    &emsp;<strong>BCM Advogados</strong> é um escritório jurídico comprometido com a <strong>excelência</strong>, a <strong>ética</strong> e a <strong>transparência</strong> no atendimento aos seus clientes. Com <strong>forte atuação na área previdenciária</strong>, somos especializados em <strong>assegurar os direitos dos segurados</strong>, oferecendo uma <strong>assessoria jurídica personalizada, eficiente e voltada para resultados concretos</strong>.
-                </p>
-                <p>
-                    &emsp;Atuamos também em <strong>diversas outras áreas do Direito</strong>, sempre com o mesmo padrão de <strong>dedicação, responsabilidade e respeito</strong> às necessidades individuais de cada cliente.
-                </p>
-                <p>
-                    &emsp;Trabalhamos com <strong>transparência em todas as etapas do processo</strong>, mantendo nossos clientes <strong>informados e acolhidos</strong>.
-                </p>
-                <p>
-                    &emsp;No <strong>BCM Advogados</strong>, acreditamos que a advocacia deve ser exercida com <strong>responsabilidade social</strong>, construindo <strong>relações de confiança</strong> e promovendo <strong>justiça com ética e profissionalismo</strong>.
-                </p>
+            <div class="limitador">
+                <div class="container_p">
+                    <p>
+                        &emsp;<strong>BCM Advogados</strong> é um escritório jurídico comprometido com a <strong>excelência</strong>, a <strong>ética</strong> e a <strong>transparência</strong> no atendimento aos seus clientes. Com <strong>forte atuação na área previdenciária</strong>, somos especializados em <strong>assegurar os direitos dos segurados</strong>, oferecendo uma <strong>assessoria jurídica personalizada, eficiente e voltada para resultados concretos</strong>.
+                    </p>
+                    <p>
+                        &emsp;Atuamos também em <strong>diversas outras áreas do Direito</strong>, sempre com o mesmo padrão de <strong>dedicação, responsabilidade e respeito</strong> às necessidades individuais de cada cliente.
+                    </p>
+                    <p>
+                        &emsp;Trabalhamos com <strong>transparência em todas as etapas do processo</strong>, mantendo nossos clientes <strong>informados e acolhidos</strong>.
+                    </p>
+                    <p>
+                        &emsp;No <strong>BCM Advogados</strong>, acreditamos que a advocacia deve ser exercida com <strong>responsabilidade social</strong>, construindo <strong>relações de confiança</strong> e promovendo <strong>justiça com ética e profissionalismo</strong>.
+                    </p>
+                </div>
             </div>
         </article>
 
     <!-- Nossas Atividades -->
         <div id="Atividades" class="divisoes_atividades">
             <h2>Nossas Atividades</h2>
-
-            <div class="container_atividades">
-                <div class="card_atividade">
-                    <img src="src/img/icon/INSS.png" alt="icone do INSS">
-                    <h3>Direito Previdenciário (INSS e Regime Próprio)</h3>
-                    <a href="">
-                        <div>Saiba Mais</div>
-                    </a>
-                </div>
-
-                <div class="card_atividade">
-                    <img src="src/img/icon/Direito Trabalhista.png" alt="icone">
-                    <h3>Direito Trabalhista</h3>
-                    <a href="">
-                        <div>Saiba Mais</div>
-                    </a>
-                </div>
-
-                <div class="card_atividade">
-                    <img src="src/img/icon/direito do consumidor.png" alt="icone">
-                    <h3>Direito do Consumidor</h3>
-                    <a href="">
-                        <div>Saiba Mais</div>
-                    </a>
-                </div>
-
-                <div class="card_atividade">
-                    <img src="src/img/icon/direito condominial.png" alt="icone">
-                    <h3>Direito Condominial</h3>
-                    <a href="">
-                        <div>Saiba Mais</div>
-                    </a>
-                </div>
-
-                <div class="card_atividade">
-                    <img src="src/img/icon/direito Bancario.png" alt="icone">
-                    <h3>Direito Bancário</h3>
-                    <a href="">
-                        <div>Saiba Mais</div>
-                    </a>
-                </div>
-
-                <div class="card_atividade">
-                    <img src="src/img/icon/direito penal.png" alt="icone">
-                    <h3>Direito Penal</h3>
-                    <a href="">
-                        <div>Saiba Mais</div>
-                    </a>
+            <div class="limitador_atividades">
+                <div class="container_atividades">
+                    <div class="card_atividade">
+                        <img src="src/img/icon/INSS.png" alt="icone do INSS">
+                        <a href="">
+                            <div>Saiba Mais</div>
+                        </a>
+                    </div>
+    
+                    <div class="card_atividade">
+                        <img src="src/img/icon/Direito Trabalhista.png" alt="icone">
+                        <a href="">
+                            <div>Saiba Mais</div>
+                        </a>
+                    </div>
+    
+                    <div class="card_atividade">
+                        <img src="src/img/icon/direito do consumidor.png" alt="icone">
+    
+                        <a href="">
+                            <div>Saiba Mais</div>
+                        </a>
+                    </div>
+    
+                    <div class="card_atividade">
+                        <img src="src/img/icon/direito condominial.png" alt="icone">
+                        <a href="">
+                            <div>Saiba Mais</div>
+                        </a>
+                    </div>
+    
+                    <div class="card_atividade">
+                        <img src="src/img/icon/direito Bancario.png" alt="icone">
+                        <a href="">
+                            <div>Saiba Mais</div>
+                        </a>
+                    </div>
+    
+                    <div class="card_atividade">
+                        <img src="src/img/icon/direito penal.png" alt="icone">
+                        <a href="">
+                            <div>Saiba Mais</div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- Nossos Contatos -->
-        <div id="Contato" class="containder_contatos">
-            <h2>Nossos Contatos</h2>
-            <div>
-                <a href="https://api.whatsapp.com/send?phone=558291072644&text=Ol%C3%A1%20tudo%20bem%20estou%20vindo%20do%20site%20da%20BCM%20gostaria%20de%20falar%20com%20voc%C3%AAs%20sobre%20..." class="btn_contato">
-                    <img src="src/img/icon/whats app.png" alt="Icone do Whatsapp">
-                    <p>+55 (82) 9 9107-2644</p>
-                </a>
-                
-                <a id="btn_contato_email" href="mailto:bezerracalheirosmacedo.adv@gmail.com" class="btn_contato">
-                    <img src="src/img/icon/email.png" alt="Icone do Email">
-                    <p>bezerracalheirosmacedo.adv@gmail.com</p>
-                </a>
-                
-                <a href="https://www.instagram.com/bcm.advogadoss/" class="btn_contato">
-                    <img src="src/img/icon/Gemini_Generated_Image_fjv5s3fjv5s3fjv5-removebg-preview.png" alt="Icone do instagram">
-                    <p>@bcm.advogadoss</p>
-                </a>
+        <div class="contatos_localizacao">
+            <div id="Contato" class="containder_contatos">
+                <div class="limitador">
+                    <h2>Nossos Contatos</h2>
+                    <div>
+                        <a href="https://api.whatsapp.com/send?phone=558291072644&text=Ol%C3%A1%20tudo%20bem%20estou%20vindo%20do%20site%20do%20BCM%20gostaria%20de%20falar%20com%20voc%C3%AAs%20sobre%20..." class="btn_contato">
+                            <img src="src/img/icon/whats app.png" alt="Icone do Whatsapp">
+                            <p>+55 (82) 9 9107-2644</p>
+                        </a>
+                        
+                        <a id="btn_contato_email" href="mailto:bezerracalheirosmacedo.adv@gmail.com" class="btn_contato">
+                            <img src="src/img/icon/email.png" alt="Icone do Email">
+                            <p>bezerracalheirosmacedo.adv@gmail.com</p>
+                        </a>
+                        
+                        <a href="https://www.instagram.com/bcm.advogadoss/" class="btn_contato">
+                            <img src="src/img/icon/Gemini_Generated_Image_fjv5s3fjv5s3fjv5-removebg-preview.png" alt="Icone do instagram">
+                            <p>@bcm.advogadoss</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Localização -->
+    
+            <div id="Localizacao" >
+                <h2>
+                    Localização
+                </h2>
+    
+                <iframe  id="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2773.57119172078!2d-35.74133640300102!3d-9.669380549383268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x70145000ae54507%3A0x34ef03e5fb13c1b6!2sBCM%20Advogados!5e1!3m2!1spt-BR!2sbr!4v1753829288806!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
-
-        <!-- Localização -->
-
-        <div id="Localizacao" >
-            <h2>
-                Localização
-            </h2>
-
-            <iframe  id="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2773.57119172078!2d-35.74133640300102!3d-9.669380549383268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x70145000ae54507%3A0x34ef03e5fb13c1b6!2sBCM%20Advogados!5e1!3m2!1spt-BR!2sbr!4v1753829288806!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-
         <!-- Artigos -->
         <!-- Lembrando que o artigo tem conexão com o banco de dados -->
 
@@ -287,7 +293,7 @@
             <p>links de atribuição de creditos</p>
         </div>
     </footer>
-     <a class="btn_whats" href="https://api.whatsapp.com/send?phone=558291072644&text=Ol%C3%A1%20tudo%20bem%20estou%20vindo%20do%20site%20da%20BCM%20gostaria%20de%20falar%20com%20voc%C3%AAs%20sobre%20..."><img src="src/img/icon/whatsapp.png" alt="Link do whatsapp que leva cliente ao contato da empresa"></a>
+     <a class="btn_whats" href="https://api.whatsapp.com/send?phone=558291072644&text=Ol%C3%A1%20tudo%20bem%20estou%20vindo%20do%20site%20do%20BCM%20gostaria%20de%20falar%20com%20voc%C3%AAs%20sobre%20..."><img src="src/img/icon/whatsapp.png" alt="Link do whatsapp que leva cliente ao contato da empresa"></a>
 
     <a class="btn_subir" href="#Home"><img src="src/img/icon/stat_1_47dp_05273A_FILL0_wght400_GRAD0_opsz48.png" alt="Subir ao topo"></a>
 </body>
